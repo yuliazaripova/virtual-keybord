@@ -228,6 +228,7 @@ document.addEventListener('keydown', function(event){
         event.preventDefault();
     }   
 });
+
 document.addEventListener('keyup', function(event){
     if (document.getElementById(event.code) !== null) {
         event.preventDefault();
@@ -245,7 +246,6 @@ keyBord.addEventListener('mousedown', function(event) {
         event.target.closest('div').classList.add('press-key');    
         printKey(event.target.closest('div'));	
     }
-
 });
 
 keyBord.addEventListener('mouseup', function(event) {
